@@ -1,0 +1,31 @@
+entity Region {
+	regionName String
+}
+
+entity Country {
+	countryName String
+}
+
+
+
+relationship OneToMany {
+	Country{region} to Region
+}
+
+
+
+
+
+relationship ManyToOne {
+	Region{countries} to Country
+}
+
+
+
+
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
